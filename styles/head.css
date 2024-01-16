@@ -1,0 +1,19 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: #d3ddf3;
+    color: rgb(134,134,134);
+    margin: 0;
+    padding: 0;
+}
+
+#main-header h1{
+    font-family: "Rosarivo", cursive;
+    margin: 0.8rem 0;
+}
+
+#main-header{
+    background-color: #ff8200;
+    color: rgb(49, 48, 48);
+    padding: 0.8rem 5%;
+    text-align: center;
+}

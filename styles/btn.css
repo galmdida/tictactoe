@@ -1,0 +1,33 @@
+/* I wanna have different styling for different buttons */
+/* Edit, cancel, confirm */
+
+.btn-edit{
+    font-family: inherit;
+    background-color: #a8c0f3;
+    border-color: #a8c0f3;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+}
+
+.btn-edit:hover{
+    background-color: #82a4ec;
+}
+
+.btn-confirm{
+    font-family: inherit;
+    background-color: #ff8200;
+    border-color: #ff8200;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+}
+
+.btn-confirm:hover{
+    background-color: #f79b39;
+    border-color: #f79b39;
+}
+
+header .btn-confirm{
+    color: #042a7e;
+}

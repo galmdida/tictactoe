@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Rosarivo&display=swap"
+        rel="stylesheet">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="/styles/head.css">
+    <link rel="stylesheet" href="/styles/config.css">
+    <link rel="stylesheet" href="/styles/btn.css">
+    <link rel="stylesheet" href="/styles/overlay.css">
+    <link rel="stylesheet" href="/styles/game.css">
+    <link rel="stylesheet" href="/styles/config-overlay.css">
+    <link rel="stylesheet" href="/styles/form-control.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+
+    <script src="/script/config.js" defer></script>
+    <script src="/script/game.js" defer></script>
+    <script src="/script/app.js" defer></script>
+</head>
+<body>
+
+    <div id="back-drop"></div>
+
+    <header id="main-header">
+        <h1>Play Tic, Tac, Toe</h1>
+        <p>Built with HTML, CSS and Java Script, lots of love & lots of fun</p>
+        <button class="btn-confirm" id="game-desc-btn">Learn the game</button>
+    </header>
+
+    <main>
+        <aside class="overlay" id="config-overlay"> <!--This is the section that display when we click edit-->
+            <h2>Type your name</h2>
+            <form action="" method="">
+                <div class="form-control">
+                    <label for="player-name">Player name</label>
+                    <input type="text" name="player-name" id="player-name" required>
+                </div>
+                <div>
+                    <button type="button" class="btn-edit" id="cancel">Cancel</button>
+                    <button type="submit" class="btn-confirm" id="confirm">Confirm</button>
+                </div>
+            </form>
+        </aside>
+
+        <aside class="overlay" id="game-desc">
+            <p>Game Rules</p>
+            <ol>
+                <li>You have to be in a pair</li>
+                <li>Both players have to enter their name</li>
+                <li>The players take turn and click on the board</li>
+                <li>The player who covers a row or column or diagnol will win</li>
+            </ol>
+        </aside>
+        <section id="config">
+            <ol> <!-- Ordered list makes sense as we have plyr1 and 2 -->
+                <li id="player1">
+                    <article id="player-1-data"> <!-- makes sense as we describe players -->
+                        <h2>Player1</h2>
+                        <h3>PLAYER NAME</h3>
+                        <p class="player-symbol">X</p>
+                        <button class="btn-edit" id="btn-1-edit" data-playerid="1">Edit</button>
+                    </article>
+                </li>
+                <li id="player2">
+                    <article id="player-2-data"> <!-- makes sense as we describe players -->
+                        <h2>Player2</h2>
+                        <h3>PLAYER NAME</h3>
+                        <p class="player-symbol">0</p>
+                        <button class="btn-edit" id="btn-2-edit" data-playerid="2">Edit</button>
+                    </article>
+                </li>
+            </ol>
+            <button class="btn-confirm" id="start-game">Start New Game</button>
+        </section>
+
+        <section id="game">
+            <article id="game-over">
+                <h3>You won, <span id="winner-name">PLAYER NAME</span>!</h3>
+                <p>Click "Start New Game" above, to start a new game</p>
+            </article>
+            <p>
+                It's your turn <span id="active-player-name">PLAYER NAME</span>!
+            </p>
+
+            <ol id="game-board">
+                <li data-col="1" data-row="1"></li>
+                <li data-col="2" data-row="1"></li>
+                <li data-col="3" data-row="1"></li>
+
+                <li data-col="1" data-row="2"></li>
+                <li data-col="2" data-row="2"></li>
+                <li data-col="3" data-row="2"></li>
+
+                <li data-col="1" data-row="3"></li>
+                <li data-col="2" data-row="3"></li>
+                <li data-col="3" data-row="3"></li>
+            </ol>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>Proudly developed by Galm Dida &#169;	2024</p>
+    </footer>
+</body>
+
+</html>

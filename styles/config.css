@@ -1,0 +1,41 @@
+#config{
+    width: 90%;
+    max-width: 40rem; /* make it responsive */
+    margin: 0.8rem auto; /* center the container */
+    text-align: center; /* center the text */
+}
+
+#config ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#config ol li{
+    margin: 0.8rem;
+    padding: 0.8rem;
+    width: 50%; /* To split the space evenly */
+    background-color: #b9cbf3;
+    box-shadow: 0 2px 4px rgba(1, 1, 68, 0.2);
+    border-radius: 5px;
+}
+
+#config h2{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+#config h3{
+    font-size: 1.5rem;
+    margin: 0.2rem 0;
+    color: #042a7e;
+    text-transform: uppercase;
+}
+
+.player-symbol{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #021642;
+    margin: 0.5rem 0;
+}

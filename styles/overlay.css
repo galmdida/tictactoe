@@ -1,0 +1,29 @@
+.overlay{
+    position: fixed;
+    top: 24%;
+    left: 5%;
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+}
+
+@media (min-width: 48rem){
+    .overlay{
+        left: 15%;
+        width: 70%;
+    }
+}
+
+
+#back-drop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
